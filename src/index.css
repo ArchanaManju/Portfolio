@@ -1,0 +1,20 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles (merged with Tailwind's base) */
+html, body, #root {
+	height: 100%;
+}
+body {
+	margin: 0;
+	background: #f3f4f6;
+}
+
+/* small utility wrapper for legacy class names */
+.container {
+	max-width: 64rem;
+	margin: 0 auto;
+	padding: 1rem;
+}
