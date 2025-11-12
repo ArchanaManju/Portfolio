@@ -3,21 +3,43 @@ import React from "react";
 
 const certificates = [
   {
-    title: "React Developer Certification",
-    issuer: "Coursera",
-    link: "https://coursera.org/verify/xyz",
+    title: "Claude code in action",
+    issuer: "Anthropic",
+    link: 'https://verify.skilljar.com/c/8ufar2sjaag6'
   },
   {
-    title: "Full Stack Web Certificate",
-    issuer: "FreeCodeCamp",
-    link: "https://freecodecamp.org/certificate/abc",
+    title: "Python Programming Certificate",
+    issuer: "Microsoft",
+    link: 'https://www.coursera.org/account/accomplishments/certificate/K1Y129WB7BZJ'
   },
+    {
+    title: "Data Science and Machine Learning",
+    issuer: "MIT",
+    link:'https://olympus.mygreatlearning.com/eportfolio'
+  },
+
 ];
 
 function Certificates() {
   return (
-    <section className="my-8 px-4">
-      <h2 className="text-2xl font-bold mb-4">My Certificates</h2>
+    <section   
+    id="certifications"
+    style={{
+      maxWidth: 1100,
+      margin: '2rem auto',
+      padding: '2rem 1rem',
+      background: 'black',
+      borderRadius: 12,
+      border: '1px solid #333',
+      boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
+    }}>
+    <h2 style={{
+        fontSize: 28,
+        fontWeight: 700,
+        marginBottom: 24,
+        textAlign: 'center',
+        color: '#b2c4e1'
+      }}>My Certificates</h2>
       <ul className="space-y-4">
         {certificates.map((cert, index) => (
           <li

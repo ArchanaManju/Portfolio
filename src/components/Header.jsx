@@ -4,12 +4,13 @@ import React from 'react';
 const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Experience', href: '#experience' },
-  { name: 'Projects', href: '#projects' },
+  // { name: 'Projects', href: '#projects' },
   { name: 'Skills', href: '#skills' },
-  { name: 'Education', href: '#education' },
+  // { name: 'Education', href: '#education' },
+  { name: 'github', href: 'https://github.com/ArchanaManju?tab=repositories', external: true },
   { name: 'Certifications', href: '#certifications' },
   { name: 'Contact', href: '#contact' },
-  { name: 'Resume', href: 'https://drive.google.com/file/d/1fldTztMS-MU08XEVPBXLoe1RSHx5kZ7T/view?usp=sharing', external: true }
+  { name: 'Resume', href: 'https://docs.google.com/document/d/1Ax6dkSNecECxw0uYq6B50IevgDR8aHRK/edit?usp=sharing&ouid=118121754568754716228&rtpof=true&sd=true', external: true }
 ];
 
 function Header() {

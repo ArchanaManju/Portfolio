@@ -6,6 +6,8 @@ import './index.css';
 import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/SkillsSection';
+import Certifications from './components/Certificates';
+import ContactsCard from './components/ContactCard';
 
 const profilePhoto = new URL('./assets/profile-photo.jpg', import.meta.url).href;
 
@@ -22,9 +24,9 @@ function App() {
       <Header />
       <About/> 
       <ExperienceSection />    
-      <Projects />
       <Skills/>
-      <Certificates />
+      <Certifications />
+      <ContactsCard/>
 
     </div>
   );

@@ -1,21 +1,50 @@
 import React from 'react';
 import ExperienceCard from './ExperienceCard';
-import { FaReact, FaNodeJs } from 'react-icons/fa';
+import { FaReact, FaBrain, FaSitemap, FaDatabase, FaJava, FaTools } from 'react-icons/fa';
+
 
 const experiences = [
   {
-    title: "Frontend Developer",
-    subtitle: "Acme Corp",
+    title: "🚀 Frontend Project Leadership & Innovation",
+    subtitle: "Treasure Data Inc",
     icon: <FaReact />,
     description: "Built modern web applications using React and Redux.",
     progress: 85
   },
   {
-    title: "Backend Developer",
-    subtitle: "Beta Ltd",
-    icon: <FaNodeJs />,
-    description: "Created RESTful APIs and integrated with databases.",
+    title: "🦾 AI Engineer",
+    subtitle: "Treasure Data Inc",
+    icon:  <FaBrain />, 
+    description: "Developed AI-driven features and integrated machine learning models into existing platforms for predictive analytics.",
     progress: 75
+  },
+  {
+    title: "🚀 Software Development & Engineering Lead",
+    subtitle: "arm",
+    icon: <FaTools />,
+    description: "Setup automated test framework and performed API and performance testing.",
+    progress: 100
+  },
+  {
+    title: "🧪 Senior Software Development Engineer in Test (SDET)",
+    subtitle: "Gta/Hotel Beds",
+    icon: <FaSitemap />,
+    description: "Contributed to both frontend and backend development using Javascript, node.js, React, and PostgreSQL.",
+    progress: 100
+  },
+  {
+    title: "⚙️ Senior Software Automation Engineer (Mobile & Web)",
+    subtitle: "Digital Insight",
+    icon: <FaDatabase />, 
+    description: "Full-Stack Automation, API Automation Specialization, Database Integration,Custom Scripting & Tooling",
+    progress: 100
+  },
+    {
+    title: "🔗 Integration Engineer",
+    subtitle: "Cisco Systems",
+    icon: <FaJava />, 
+    description: "Engineered comprehensive automation frameworks.Set up and managed the Build System using Jenkins to automate the continuous integration and delivery pipeline.",
+    progress: 100
   }
 ];
 
@@ -29,7 +58,7 @@ function ExperienceSection() {
       padding: '2rem 1rem',
       background: 'black',
       borderRadius: 12,
-      boxShadow: '0 4px 16px rgba(0,0,0,0.08)'
+      boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
     }}>
       <h2 style={{
         fontSize: 28,
@@ -38,9 +67,13 @@ function ExperienceSection() {
         textAlign: 'center',
         color: '#b2c4e1'
       }}>Experience</h2>
-      {experiences.map((exp, index) => (
+
+         <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
+             {experiences.map((exp, index) => (
         <ExperienceCard key={index} {...exp} />
       ))}
+          </ul>
+    
     </section>
   );
 }
