@@ -38,18 +38,14 @@ function About() {
 
   return (
     <section
-        id="about"
       style={{
         maxWidth: 1200,
-        margin: '2rem auto',
         padding: '2rem 1rem',
-        background: 'black',
-        borderRadius: 12,
-        boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
-        display: 'flex',
-        gap: '2rem',
-        alignItems: 'center',
+        background: 'black'
+     
       }}
+       id="about"
+       className="max-w-[1200px] mx-auto my-8 px-4 py-8 bg-black rounded-[12px] shadow-[0_4px_16px_rgba(0,0,0,0.08)] flex gap-8 items-center"
     >
       {/* Left: Text content */}
       <div style={{ flex: 1 }}>

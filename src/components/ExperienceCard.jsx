@@ -1,47 +1,66 @@
 // src/components/ExperienceCard.jsx
 import React from 'react';
 
+
 function ExperienceCard({ title, subtitle, icon, description, progress }) {
-  return (
-    <div style={{
-      borderRadius: 12,
-      boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
-      padding: 20,
-      marginBottom: 16,
-      display: 'flex',
-      alignItems: 'center',
-      gap: '1rem',
-      border: '1px solid #333',
-    }}>
-      <div style={{ fontSize: 32, color: '#b2c4e1' }}>
-        {icon || '💼'}
-      </div>
-      <div style={{ flex: 1 }}>
-        <h3 style={{
-          margin: 0, 
-          fontSize: 22, 
-          fontWeight: '700', 
-          color: '#b2c4e1'
-        }}>{title}</h3>
-        <p style={{ margin: '4px 0 8px', color: '#b2c4e1', fontSize: 14 }}>{subtitle}</p>
-        <p style={{ margin: 0, color: '#b2c4e1', fontSize: 16 }}>{description}</p>
-        {progress !== undefined && (
-          <div style={{
-            marginTop: 8,
-            height: 8,
-            borderRadius: 4,
-            overflow: 'hidden',
-          }}>
-            <div style={{
-              width: `${progress}%`,
-              height: '100%',
- 
-            }} />
-          </div>
-        )}
-      </div>
+return (
+  <div
+     style={{
+      padding: '2rem 1rem',
+    }}
+    className="
+      rounded-[12px]
+      shadow-[0_4px_16px_rgba(0,0,0,0.08)]
+      flex
+      items-center
+      gap-4
+      border border-[#333]
+    "
+  >
+    <div 
+        style={{
+
+      padding: '2rem 1rem',
+
+      margin:'2rem auto',
+    }}className="text-[32px] text-[#b2c4e1]">
+      {icon || "💼"}
     </div>
-  );
+
+    <div className="flex-1">
+      <h3 className="m-0 text-[22px] font-bold text-[#b2c4e1]">
+        {title}
+      </h3>
+
+      <p className="mt-1 mb-2 text-[#b2c4e1] text-[14px]">
+        {subtitle}
+      </p>
+
+      <p className="m-0 text-[#b2c4e1] text-[16px]">
+        {description}
+      </p>
+
+      {progress !== undefined && (
+        <div
+          className="
+            mt-2
+            h-2
+            rounded-[4px]
+            overflow-hidden
+            bg-[#1a1a1a]
+          "
+        >
+          <div
+            className="h-full bg-[#b2c4e1]"
+            style={{ width: `${progress}%` }}
+          />
+        </div>
+      )}
+    </div>
+  </div>
+);
+
 }
+
 
 export default ExperienceCard;

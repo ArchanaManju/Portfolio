@@ -3,37 +3,35 @@ import React from "react";
 
 
 function ConatactCard() {
- return (
-    <div 
-    id ='contact'
- style={{
-      maxWidth: 1100,
-      margin: '2rem auto',
+return (
+  <div
+    id="contact"
+        style={{
+      maxWidth: 1200,
       padding: '2rem 1rem',
       background: 'black',
-      borderRadius: 12,
-      border: '1px solid #333',
-      boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
-    }}>
-  
-      <div style={{ flex: 1 }}>
-        <h3 style={{
-          margin: 0, 
-          fontSize: 22, 
-          fontWeight: '700', 
-          color: '#b2c4e1'
-        }}>emailId : archanahm2021@gmail.com</h3>
-            <h3 style={{
-          margin: 0, 
-          fontSize: 22, 
-          fontWeight: '700', 
-          color: '#b2c4e1'
-        }}>{}</h3>
-       
-  
-      </div>
+      margin:'2rem auto',
+    }}
+    className="
+      mx-auto 
+      my-8 
+      px-4 
+      py-8 
+      bg-black 
+      rounded-[12px] 
+      border border-[#333] 
+      shadow-[0_4px_16px_rgba(0,0,0,0.08)]
+    "
+  >
+    <div className="flex flex-col">
+      <h3 className="m-0 text-[22px] font-bold text-[#b2c4e1]">
+        emailId : archanahm2021@gmail.com
+      </h3>
+      {/* Add additional info here if needed */}
     </div>
-  );
+  </div>
+);
+
 }
 
 export default ConatactCard;

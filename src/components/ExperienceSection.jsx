@@ -50,32 +50,31 @@ const experiences = [
 
 function ExperienceSection() {
   return (
-    <section 
-    id="experience"
+    <section  
     style={{
       maxWidth: 1200,
-      margin: '2rem auto',
       padding: '2rem 1rem',
       background: 'black',
-      borderRadius: 12,
-      boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
-    }}>
-      <h2 style={{
-        fontSize: 28,
-        fontWeight: 700,
-        marginBottom: 24,
-        textAlign: 'center',
-        color: '#b2c4e1'
-      }}>Experience</h2>
+      margin:'2rem auto',
+    }}
+    id="experience"
+    className="max-w-[1200px] mx-auto my-8 px-4 py-8 bg-black rounded-[12px] shadow-[0_4px_16px_rgba(0,0,0,0.08)]"
+    >
+  <h2
+    className="text-[28px] font-bold mb-6 text-center text-[#b2c4e1]"
+  >
+    Experience
+  </h2>
+  <ul
 
-         <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
-             {experiences.map((exp, index) => (
-        <ExperienceCard key={index} {...exp} />
-      ))}
-          </ul>
-    
-    </section>
-  );
+    className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+    {experiences.map((exp, idx) => (
+      <ExperienceCard key={idx} {...exp} />
+    ))}
+  </ul>
+  </section>
+ );
 }
 
 export default ExperienceSection;
