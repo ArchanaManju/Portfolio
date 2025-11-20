@@ -14,7 +14,6 @@ const profilePhoto = new URL('./assets/profile-photo.jpg', import.meta.url).href
 function App() {
   return (
     <div 
-    className="app-container"
     style={{
       margin: 'auto',
       padding: '2rem 1rem',
