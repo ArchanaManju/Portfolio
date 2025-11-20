@@ -13,7 +13,11 @@ const profilePhoto = new URL('./assets/profile-photo.jpg', import.meta.url).href
 
 function App() {
   return (
-     <div className="w-full min-h-screen flex flex-col items-center bg-black m-0 p-0;">
+     <div    style={{
+  
+      background: 'black',
+
+    }}className="w-full min-h-screen flex flex-col items-center  m-0 p-0;">
       <div className="w-full max-w-6xl mx-auto p-4">
       <Header />
       <About/> 

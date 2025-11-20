@@ -5,25 +5,20 @@ import React from 'react';
 function ExperienceCard({ title, subtitle, icon, description, progress }) {
 return (
   <div
-     style={{
-      padding: '2rem 1rem',
-    }}
+    
     className="
       rounded-[12px]
       shadow-[0_4px_16px_rgba(0,0,0,0.08)]
       flex
       items-center
       gap-4
-      border border-[#333]
+      border border-[#121111]
+      m-[10px]
+      p-[20px]
     "
   >
     <div 
-        style={{
-
-      padding: '2rem 1rem',
-
-      margin:'2rem auto',
-    }}className="text-[32px] text-[#b2c4e1]">
+        className="text-[32px] text-[#b2c4e1] m-[10px]">
       {icon || "💼"}
     </div>
 

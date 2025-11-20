@@ -3,14 +3,13 @@ import React from 'react';
 function SkillsCard({ title, items }) {
 return (
   <div
-  style={{padding: 20,}}
     className="
       rounded-[12px]
       shadow-[0_4px_16px_rgba(0,0,0,0.08)]
-      p-5
-      mb-4
       gap-4
-      border border-[#333]
+      border border-[#121111] 
+      m-[10px]
+      p-[20px]
     "
   >
     <h3 className="text-[20px] text-[#b2c4e1]">

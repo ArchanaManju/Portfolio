@@ -32,13 +32,8 @@ function Certificates() {
   return (
     <section
       id="certifications"
-      style={{
-      maxWidth: 1200,
-      padding: '2rem 1rem',
-      background: 'black',
-      margin:'2rem auto',
-    }}
-     className="max-w-[1200px] mx-auto my-8 px-4 py-8 rounded-[12px] shadow-[0_4px_16px_rgba(0,0,0,0.08)]" >
+      className="max-w-[1200px] mx-auto my-8 px-4 py-8 rounded-[12px] shadow-[0_4px_16px_rgba(0,0,0,0.08)] border border-[#121111] m-[10px]
+      p-[20px]" >
       <h2
         className="
           text-[28px]
