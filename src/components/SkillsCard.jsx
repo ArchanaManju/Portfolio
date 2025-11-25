@@ -1,65 +1,20 @@
-import React from 'react';
+import '../Styles/skills.css';
+
 
 function SkillsCard({ title, items }) {
 return (
-  <div
-    className="
-      rounded-[12px]
-      shadow-[0_4px_16px_rgba(0,0,0,0.08)]
-      gap-4
-      border border-[#121111] 
-      m-[10px]
-      p-[20px]
-    "
-  >
-    <h3 className="text-[20px] text-[#b2c4e1]">
-      {title}
-    </h3>
-
-    <div className="flex flex-wrap">
-      {items.map(({ icon, label }, idx) => (
-        <div
-          key={idx}
-          style={{margin: '8px'}}
-          className="
-            flex
-            flex-col
-            items-center
-          "
-        >
-          <div
-          
-            className="
-              text-[32px]
-              text-[#b2c4e1]
-              rounded-[12px]
-              p-3
-              shadow-[0_2px_8px_rgba(0,0,0,0.1)]
-              mb-2
-              transition-transform
-              duration-300
-              hover:scale-110
-            "
-          >
-            {icon}
-          </div>
-
-          <span className="text-[14px] text-[#b2c4e1]">
-            {label}
-          </span>
-        </div>
-      ))}
-    </div>
-  </div>
+<li className="skills-card">
+<h3>{title}</h3>
+<div className="skills-items">
+{items.map(({ icon, label }, idx) => (
+<div key={idx} className="skill-item">
+<div className="skill-icon">{icon}</div>
+<span className="skill-label">{label}</span>
+</div>
+))}
+</div>
+</li>
 );
-
 }
 
-export default SkillsCard;    
-
-
-
-
-
-
-
+export default SkillsCard;

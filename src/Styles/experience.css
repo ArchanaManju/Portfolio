@@ -1,0 +1,114 @@
+/* Container & title */
+.experience-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.25rem 2rem;
+  background-color: #000;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border: 1px solid #121111;
+  color: #b2c4e1;
+  text-align: center;
+}
+
+.experience-section h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* List grid with gap and responsive columns */
+.experience-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .experience-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card styles */
+.experience-card {
+  background-color: rgba(255 255 255 / 0.05);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #121111;
+  padding: 20px;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  color: #b2c4e1;
+  min-height: 150px;
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.experience-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon */
+.experience-icon {
+  font-size: 32px;
+  margin-top: 10px;
+  color: #b2c4e1;
+  flex-shrink: 0;
+}
+
+/* Content */
+.experience-content {
+  flex-grow: 1;
+}
+
+.experience-content h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 6px;
+  color: #b2c4e1;
+}
+
+.experience-content .subtitle {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #b2c4e1;
+}
+
+.experience-content .description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #b2c4e1;
+}
+
+/* Progress bar */
+.progress-bar-background {
+  margin-top: 12px;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #b2c4e1;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+.progress-bar-fill.beginner {
+  background-color: #f56565; /* Red for Beginner */
+}

@@ -1,0 +1,18 @@
+.contact-section{
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.25rem 2rem;
+  background-color: #000;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border: 1px solid #121111;
+  color: #b2c4e1;
+  text-align: center;
+}
+
+.certificates-section h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #b2c4e1;
+}

@@ -9,26 +9,18 @@ import Skills from './components/SkillsSection';
 import Certifications from './components/Certificates';
 import ContactsCard from './components/ContactCard';
 
-const profilePhoto = new URL('./assets/profile-photo.jpg', import.meta.url).href;
-
 function App() {
-  return (
-     <div    style={{
-  
-      background: 'black',
-
-    }}className="w-full min-h-screen flex flex-col items-center  m-0 p-0;">
-      <div className="w-full max-w-6xl mx-auto p-4">
-      <Header />
-      <About/> 
-      <Certifications />
-      <ExperienceSection />    
-      <Skills/>
-
-      <ContactsCard/>
-    </div>
-    </div>
-  );
+return (
+<div className="min-h-screen bg-black text-slate-50">
+<Header />
+<main className="max-w-5xl mx-auto px-4 py-6 space-y-12">
+<About />
+<Certifications />
+<ExperienceSection />
+<Skills />
+<ContactsCard />
+</main>
+</div>
+);
 }
-
 export default App;

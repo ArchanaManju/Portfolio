@@ -1,7 +1,7 @@
 import React from 'react';
 import ExperienceCard from './ExperienceCard';
 import { FaReact, FaBrain, FaSitemap, FaDatabase, FaJava, FaTools } from 'react-icons/fa';
-
+import '../styles/experience.css';
 
 const experiences = [
   {
@@ -39,7 +39,7 @@ const experiences = [
     description: "Full-Stack Automation, API Automation Specialization, Database Integration,Custom Scripting & Tooling",
     progress: 100
   },
-    {
+  {
     title: "🔗 Integration Engineer",
     subtitle: "Cisco Systems",
     icon: <FaJava />, 
@@ -50,23 +50,15 @@ const experiences = [
 
 function ExperienceSection() {
   return (
-    <section  
-    id="experience"
-    className="max-w-[1200px] mx-auto my-8 px-8 bg-black rounded-[12px] shadow-[0_4px_16px_rgba(0,0,0,0.08)] border border-[#121111]  m-[10px]
-      p-[20px]" >
-  <h2
-    className="text-[28px] font-bold mb-6 text-center text-[#b2c4e1]"
-  >
-    Experience
-  </h2>
-  <ul
-    className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-4 pr-[40px]">
-    {experiences.map((exp, idx) => (
-      <ExperienceCard key={idx} {...exp} />
-    ))}
-  </ul>
-  </section>
- );
+    <section id="experience" className="experience-section">
+      <h2>Experience</h2>
+      <ul className="experience-list">
+        {experiences.map((exp, idx) => (
+          <ExperienceCard key={idx} {...exp} />
+        ))}
+      </ul>
+    </section>
+  );
 }
 
 export default ExperienceSection;
