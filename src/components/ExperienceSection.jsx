@@ -1,7 +1,7 @@
 import React from 'react';
 import ExperienceCard from './ExperienceCard';
 import { FaReact, FaBrain, FaSitemap, FaDatabase, FaJava, FaTools } from 'react-icons/fa';
-import '../styles/experience.css';
+import '../Styles/experience.css';
 
 const experiences = [
   {

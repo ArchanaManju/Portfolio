@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/experience.css';
+import '../Styles/experience.css';
 
 function ExperienceCard({ title, subtitle, icon, description, progress }) {
   return (

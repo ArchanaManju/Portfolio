@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/certificate.css';
+import '../Styles/certificate.css';
 
 const mitImage = new URL('../assets/mit-logo.png', import.meta.url).href;
 const claudeImage = new URL('../assets/Claude_AI_logo.svg', import.meta.url).href;
